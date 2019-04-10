@@ -1,6 +1,9 @@
+import pyautogui
+import datetime
 from locators import *
 from re import sub
 from decimal import Decimal
+
 
 class BasePage(object):
     def __init__(self, driver):
@@ -9,6 +12,11 @@ class BasePage(object):
 
 class HomePage(BasePage):
     def is_title_matches(self):
+        # TODO - Make this a re-usable class - keep it DRY
+        visited_page = 'ProductDetailsPage'
+        today = '{:%m-%d-%y %H:%M:%S}'.format(datetime.datetime.now())
+        pyautogui.screenshot('../results/'+visited_page+'_'+str(today)+'.png')
+
         return "Welcome to 5ElementsLearning" in self.driver.title
 
     def select_product(self):
@@ -19,6 +27,10 @@ class HomePage(BasePage):
 class ProductDetailsPage(BasePage):
     def product_title_is_visible(self):
         product_title = self.driver.find_element(*PDPLocators.PDP_TITLE)
+        visited_page = 'ProductDetailsPage'
+        today = '{:%m-%d-%y %H:%M:%S}'.format(datetime.datetime.now())
+        pyautogui.screenshot('../results/'+visited_page+'_'+str(today)+'.png')
+        
         assert product_title.is_displayed()
 
     def select_options_and_add_to_cart(self):
@@ -43,6 +55,9 @@ class ProductDetailsPage(BasePage):
 
 class ShoppingCartPage(BasePage):
     def check_all_ui(self):
+        visited_page = 'ShoppingCartPage'
+        today = '{:%m-%d-%y %H:%M:%S}'.format(datetime.datetime.now())
+        pyautogui.screenshot('../results/'+visited_page+'_'+str(today)+'.png')
 
         cart_page_title = self.driver.find_element(*MyCartPageLocators.CART_TITLE)
         assert cart_page_title.is_displayed()
@@ -60,6 +75,10 @@ class ShoppingCartPage(BasePage):
 
 class SignInPage(BasePage):
     def title_is_visible(self):
+        visited_page = 'SignInPage'
+        today = '{:%m-%d-%y %H:%M:%S}'.format(datetime.datetime.now())
+        pyautogui.screenshot('../results/'+visited_page+'_'+str(today)+'.png')
+
         sign_in_title = self.driver.find_element(*SignInPageLocators.TITLE)
         assert sign_in_title.is_displayed()
 
@@ -78,6 +97,10 @@ class SignInPage(BasePage):
 
 class ShippingPage(BasePage):
     def title_is_visible(self):
+        visited_page = 'ShippingPage'
+        today = '{:%m-%d-%y %H:%M:%S}'.format(datetime.datetime.now())
+        pyautogui.screenshot('../results/'+visited_page+'_'+str(today)+'.png')
+
         shipping_page_title = self.driver.find_element(*ShippingPageLocators.TITLE)
         assert shipping_page_title.is_displayed()
 
@@ -102,6 +125,10 @@ class ShippingPage(BasePage):
 
 class PaymentInfoPage(BasePage):
     def title_is_visible(self):
+        visited_page = 'PaymentInfoPage'
+        today = '{:%m-%d-%y %H:%M:%S}'.format(datetime.datetime.now())
+        pyautogui.screenshot('../results/'+visited_page+'_'+str(today)+'.png')
+
         billing_page_title = self.driver.find_element(*PaymentInfoPageLocators.TITLE)
         assert billing_page_title.is_displayed()
 
@@ -119,6 +146,10 @@ class PaymentInfoPage(BasePage):
 
 class ConfirmationPage(BasePage):
     def title_is_visible(self):
+        visited_page = 'ConfirmationPage'
+        today = '{:%m-%d-%y %H:%M:%S}'.format(datetime.datetime.now())
+        pyautogui.screenshot('../results/'+visited_page+'_'+str(today)+'.png')
+
         confirmation_page_title = self.driver.find_element(*ConfirmationPageLocators.TITLE)
         assert confirmation_page_title.is_displayed()
 
@@ -189,6 +220,10 @@ class ConfirmationPage(BasePage):
 
 class SuccessPage(BasePage):
     def order_is_successful(self):
+        visited_page = 'SuccessPage'
+        today = '{:%m-%d-%y %H:%M:%S}'.format(datetime.datetime.now())
+        pyautogui.screenshot('../results/'+visited_page+'_'+str(today)+'.png')
+
         success_page_title = self.driver.find_element(*SuccessPageLocators.TITLE)
         assert success_page_title.is_displayed()
 
