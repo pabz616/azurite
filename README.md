@@ -1,15 +1,17 @@
-azurite
+# azurite
 ```
-This is where my PYTEST works will go.
+Welcome! This is where my PYTEST works will go.
 ```
 setup
 ```
-Set up environment in PyCharm IDE
+Set up environment in PyCharm IDE (Professional / Community)
+https://www.jetbrains.com/pycharm/download/
 ```
 
 install packages
 ```
 pip Install behave (if this is the agreed-to solution, otherwise skip)
+pip install pytest (https://pypi.org/project/pytest/)
 ```
 
 install assertions (options incl.)
