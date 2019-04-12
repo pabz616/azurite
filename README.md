@@ -42,7 +42,12 @@ example:
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-example: my_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "x"))
+example: 
+try:
+     my_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "x"))
+     my_element.click()
+except:
+     print(some message stating its not present)
 src: https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html
 ```
 
