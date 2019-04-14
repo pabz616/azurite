@@ -54,10 +54,11 @@ Running Headless
 ```
 from selenium.webdriver.chrome.options import Options
 
-_in the code_
-chrome_options = Options()
-chrome_options.add_argument(“—headless”)
-Driver = web driver.Chrome(chrome_options=chrome_options, executable_path=“….”)
+_in the code_    options = Options()
+options.headless = True
+options.add_argument('--disable-gpu')
+options.add_argument('--window-size=1920,1080')
+driver = webdriver.Chrome(options=options, executable_path='../drivers/chromedriver')
 ```
 Install screenshot library (if not using driver default)
 ```
