@@ -50,7 +50,15 @@ except:
      print(some message stating its not present)
 src: https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html
 ```
+Running Headless
+```
+from selenium.webdriver.chrome.options import Options
 
+_in the code_
+chrome_options = Options()
+chrome_options.add_argument(“—headless”)
+Driver = web driver.Chrome(chrome_options=chrome_options, executable_path=“….”)
+```
 Install screenshot library (if not using driver default)
 ```
 pip install pyautogui (for screenshots, 
