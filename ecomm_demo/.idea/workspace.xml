@@ -2,16 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa43a483-73bb-4d13-a78c-3c188130d339" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ConfirmationPage_04-10-19 12:25:35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/PaymentInfoPage_04-10-19 12:25:34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ProductDetailsPage_04-10-19 12:25:25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ProductDetailsPage_04-10-19 12:25:29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ShippingPage_04-10-19 12:25:33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ShoppingCartPage_04-10-19 12:25:31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/SignInPage_04-10-19 12:25:32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/SuccessPage_04-10-19 12:25:36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_checkout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ConfirmationPage_04-14-19 10:01:19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/HomePage_04-14-19 09:41:13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/HomePage_04-14-19 09:48:45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/HomePage_04-14-19 09:51:14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/HomePage_04-14-19 09:57:46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/HomePage_04-14-19 10:01:06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/PaymentInfoPage_04-14-19 09:41:21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/PaymentInfoPage_04-14-19 09:48:59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/PaymentInfoPage_04-14-19 09:51:25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/PaymentInfoPage_04-14-19 09:57:58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/PaymentInfoPage_04-14-19 10:01:15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ProductDetailsPage_04-14-19 09:41:17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ProductDetailsPage_04-14-19 09:48:53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ProductDetailsPage_04-14-19 09:51:18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ProductDetailsPage_04-14-19 09:57:53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ProductDetailsPage_04-14-19 10:01:09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ShippingPage_04-14-19 09:41:20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ShippingPage_04-14-19 09:48:58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ShippingPage_04-14-19 09:51:22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ShippingPage_04-14-19 09:57:56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ShippingPage_04-14-19 10:01:13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ShoppingCartPage_04-14-19 09:41:18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ShoppingCartPage_04-14-19 09:48:56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ShoppingCartPage_04-14-19 09:51:19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ShoppingCartPage_04-14-19 09:57:54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/ShoppingCartPage_04-14-19 10:01:11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/SignInPage_04-14-19 09:41:19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/SignInPage_04-14-19 09:48:57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/SignInPage_04-14-19 09:51:21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/SignInPage_04-14-19 09:57:55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/SignInPage_04-14-19 10:01:12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/SuccessPage_04-14-19 10:01:21.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_checkout.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#36#66#0" expanded="true" />
               </folding>
@@ -33,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="314">
               <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -94,6 +117,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -135,14 +159,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.329235" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.329235" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -190,22 +213,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page.py">
+    <entry file="file://$PROJECT_DIR$/test_checkout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#36#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_checkout.py">
+    <entry file="file://$PROJECT_DIR$/results/PaymentInfoPage_04-14-19 09:51:25.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="314">
+          <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
           <folding>
-            <element signature="e#36#66#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
