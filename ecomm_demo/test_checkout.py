@@ -3,12 +3,23 @@
 from selenium import webdriver
 import page
 import pytest
+from selenium.webdriver.chrome.options import Options
 
 
 @pytest.fixture(autouse=True)
 def test_setup():
     global driver
-    driver = webdriver.Chrome(executable_path='../drivers/chromedriver')
+
+    # RUNNING HEADLESS
+    options = Options()
+    options.headless = True
+    options.add_argument('--disable-gpu')
+    options.add_argument('--window-size=1920,1080')
+    driver = webdriver.Chrome(options=options, executable_path='../drivers/chromedriver')
+
+    # RUNNING IN BROWSER
+    # driver = webdriver.Chrome(executable_path='../drivers/chromedriver')
+
     driver.implicitly_wait(30)
     driver.maximize_window()
     driver.get('http://www.5elementslearning.com/demosite/')
