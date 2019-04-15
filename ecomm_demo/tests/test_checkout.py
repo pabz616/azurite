@@ -1,9 +1,18 @@
 # SCOPE: E2E DEMO FOR USING PYTEST
 
 from selenium import webdriver
-import page
+from pages.homePage import HomePage
+from pages.confirmationPage import ConfirmationPage
+from pages.paymentInfoPage import PaymentInfoPage
+from pages.productDetailsPage import ProductDetailsPage
+from pages.shippingPage import ShippingPage
+from pages.shoppingCartPage import ShoppingCartPage
+from pages.signInPage import SignInPage
+from pages.successPage import SuccessPage
+
 import pytest
 from selenium.webdriver.chrome.options import Options
+from utils import environment as env
 
 
 @pytest.fixture(autouse=True)
@@ -22,23 +31,23 @@ def test_setup():
 
     driver.implicitly_wait(30)
     driver.maximize_window()
-    driver.get('http://www.5elementslearning.com/demosite/')
+    driver.get(env.page_url)
 
     yield
     driver.close()
-    driver.quit()
+    #driver.quit()
 
 
 def test_checkout():
     # PAGES BEING TESTED
-    on_landing_page = page.HomePage(driver)
-    on_pdp = page.ProductDetailsPage(driver)
-    on_shopping_cart = page.ShoppingCartPage(driver)
-    on_sign_in_page= page.SignInPage(driver)
-    on_shipping_page = page.ShippingPage(driver)
-    on_payment_info_page = page.PaymentInfoPage(driver)
-    on_confirmation_page = page.ConfirmationPage(driver)
-    on_order_completion_page = page.SuccessPage(driver)
+    on_landing_page = HomePage(driver)
+    on_pdp = ProductDetailsPage(driver)
+    on_shopping_cart = ShoppingCartPage(driver)
+    on_sign_in_page= SignInPage(driver)
+    on_shipping_page = ShippingPage(driver)
+    on_payment_info_page = PaymentInfoPage(driver)
+    on_confirmation_page = ConfirmationPage(driver)
+    on_order_completion_page = SuccessPage(driver)
 
     # TEST STEPS
     on_landing_page.is_title_matches()
