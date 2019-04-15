@@ -5,21 +5,7 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27cb93db-557d-4b1e-bff7-988fca61b9a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/pytest_wSelenium.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pytest_wSelenium.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecomm_demo/locators/page_elements.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecomm_demo/pages/confirmationPage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecomm_demo/pages/homePage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecomm_demo/pages/paymentInfoPage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecomm_demo/pages/productDetailsPage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecomm_demo/pages/shippingPage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecomm_demo/pages/shoppingCartPage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecomm_demo/pages/signInPage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecomm_demo/pages/successPage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecomm_demo/tests/test_checkout.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecomm_demo/utils/environment.py" beforeDir="false" />
-    </list>
+    <list default="true" id="27cb93db-557d-4b1e-bff7-988fca61b9a0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
