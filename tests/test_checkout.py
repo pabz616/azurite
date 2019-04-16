@@ -60,3 +60,6 @@ class TestCheckout():
         #
         on_order_completion_page.order_is_successful()
         on_order_completion_page.continue_shopping()
+
+
+    # TODO Add more tests
