@@ -5,28 +5,7 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27cb93db-557d-4b1e-bff7-988fca61b9a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/pytest_wSelenium.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pytest_wSelenium.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/py.test" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/py.test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pytest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pytest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/_version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/debugging.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/debugging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/deprecated.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/deprecated.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/fixtures.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/fixtures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/mark/structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/mark/structures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/monkeypatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/monkeypatch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/outcomes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/outcomes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/pytester.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/pytester.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/python_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/_pytest/python_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pytest-4.4.0.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pytest-4.4.0.dist-info/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pytest-4.4.0.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pytest-4.4.0.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pytest-4.4.0.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pytest-4.4.0.dist-info/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pytest-4.4.0.dist-info/top_level.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="27cb93db-557d-4b1e-bff7-988fca61b9a0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +17,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_checkout.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-232">
+            <state relative-caret-position="-50">
               <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -109,11 +88,6 @@
             <path>
               <item name="pytest_wSelenium" type="b2602c69:ProjectViewProjectNode" />
               <item name="pytest_wSelenium" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pytest_wSelenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pytest_wSelenium" type="462c0819:PsiDirectoryNode" />
-              <item name="results" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pytest_wSelenium" type="b2602c69:ProjectViewProjectNode" />
@@ -412,7 +386,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_checkout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-232">
+        <state relative-caret-position="-50">
           <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
