@@ -8,6 +8,7 @@ from pages import shippingPage as shp
 from pages import shoppingCartPage as scp
 from pages import signInPage as sip
 from pages import successPage as sp
+from pages import accountInfoPage as ap
 
 
 @pytest.mark.usefixtures("test_setup")
@@ -60,6 +61,37 @@ class TestCheckout():
         #
         on_order_completion_page.order_is_successful()
         on_order_completion_page.continue_shopping()
+
+    def test_checkout_as_guest(self):
+
+        # PAGES BEING TESTED
+        driver = self.driver
+
+        on_landing_page = hp.HomePage(driver)
+        on_pdp = pdp.ProductDetailsPage(driver)
+        on_shopping_cart = scp.ShoppingCartPage(driver)
+        on_sign_in_page = sip.SignInPage(driver)
+        on_account_info_page = ap.AccountInfoPage(driver)
+        on_shipping_page = shp.ShippingPage(driver)
+        on_payment_info_page = pip.PaymentInfoPage(driver)
+        on_confirmation_page = cp.ConfirmationPage(driver)
+        on_order_completion_page = sp.SuccessPage(driver)
+
+        # TEST STEPS
+        self.driver.get(env.page_url)
+        on_landing_page.select_product()
+        on_pdp.select_options_and_add_to_cart()
+        on_shopping_cart.click_checkout()
+        on_sign_in_page.continue_as_new_customer()
+        on_account_info_page.submit_account_information()
+        on_shipping_page.proceed_to_billing()
+        on_payment_info_page.select_payment_method()
+        on_confirmation_page.product_ordered_is_visible()
+        on_confirmation_page.confirm_total()
+        on_confirmation_page.submit_order()
+        on_order_completion_page.order_is_successful()
+        on_order_completion_page.continue_shopping()
+
 
 
     # TODO Add more tests
