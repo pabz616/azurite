@@ -42,3 +42,4 @@ class TestCheckout():
         #
         on.OrderCompletionPage.order_is_successful(self)
         on.OrderCompletionPage.continue_shopping(self)
+
