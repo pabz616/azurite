@@ -1,97 +1,44 @@
 import pytest
 from utils import environment as env
-from pages import confirmationPage as cp
-from pages import homePage as hp
-from pages import paymentInfoPage as pip
-from pages import productDetailsPage as pdp
-from pages import shippingPage as shp
-from pages import shoppingCartPage as scp
-from pages import signInPage as sip
-from pages import successPage as sp
-from pages import accountInfoPage as ap
+from utils.environment import Pages as on
 
 
 @pytest.mark.usefixtures("test_setup")
 class TestCheckout():
+
     def test_checkout(self):
         # LAUNCH SITE
-        self.driver.get(env.page_url)
-
-        # PAGES BEING TESTED
-        driver = self.driver
-
-        on_landing_page = hp.HomePage(driver)
-        on_pdp = pdp.ProductDetailsPage(driver)
-        on_shopping_cart = scp.ShoppingCartPage(driver)
-        on_sign_in_page = sip.SignInPage(driver)
-        on_shipping_page = shp.ShippingPage(driver)
-        on_payment_info_page = pip.PaymentInfoPage(driver)
-        on_confirmation_page = cp.ConfirmationPage(driver)
-        on_order_completion_page = sp.SuccessPage(driver)
+        self.driver.get(env.base_url)
 
         # TEST STEPS
-        on_landing_page.is_title_matches()
-        on_landing_page.select_product()
+        on.HomePage.is_title_matches(self)
+        on.HomePage.select_product(self)
         #
-        on_pdp.product_title_is_visible()
-        on_pdp.select_options_and_add_to_cart()
+        on.PDP.product_title_is_visible(self)
+        on.PDP.select_options_and_add_to_cart(self)
         #
-        on_shopping_cart.check_all_ui()
-        on_shopping_cart.click_checkout()
+        on.ShoppingCart.check_all_ui(self)
+        on.ShoppingCart.click_checkout(self)
         #
-        on_sign_in_page.title_is_visible()
-        on_sign_in_page.continue_as_returning_customer()
+        on.SignInPage.title_is_visible(self)
+        on.SignInPage.continue_as_returning_customer(self)
         #
-        on_shipping_page.title_is_visible()
-        on_shipping_page.confirm_shipping_address()
-        on_shipping_page.confirm_shipping_method()
-        on_shipping_page.proceed_to_billing()
+        on.ShippingPage.title_is_visible(self)
+        on.ShippingPage.confirm_shipping_address(self)
+        on.ShippingPage.confirm_shipping_method(self)
+        on.ShippingPage.proceed_to_billing(self)
         #
-        on_payment_info_page.title_is_visible()
-        on_payment_info_page.billing_address_is_visible()
-        on_payment_info_page.select_payment_method()
+        on.PaymentInfoPage.title_is_visible(self)
+        on.PaymentInfoPage.billing_address_is_visible(self)
+        on.PaymentInfoPage.select_payment_method(self)
         #
-        on_confirmation_page.title_is_visible()
-        on_confirmation_page.shipping_information_is_visible()
-        on_confirmation_page.billing_information_is_visible()
-        on_confirmation_page.payment_information_is_visible()
-        on_confirmation_page.product_ordered_is_visible()
-        on_confirmation_page.confirm_total()
-        on_confirmation_page.submit_order()
+        on.ConfirmationPage.title_is_visible(self)
+        on.ConfirmationPage.shipping_information_is_visible(self)
+        on.ConfirmationPage.billing_information_is_visible(self)
+        on.ConfirmationPage.payment_information_is_visible(self)
+        on.ConfirmationPage.product_ordered_is_visible(self)
+        on.ConfirmationPage.confirm_total(self)
+        on.ConfirmationPage.submit_order(self)
         #
-        on_order_completion_page.order_is_successful()
-        on_order_completion_page.continue_shopping()
-
-    def test_checkout_as_guest(self):
-
-        # PAGES BEING TESTED
-        driver = self.driver
-
-        on_landing_page = hp.HomePage(driver)
-        on_pdp = pdp.ProductDetailsPage(driver)
-        on_shopping_cart = scp.ShoppingCartPage(driver)
-        on_sign_in_page = sip.SignInPage(driver)
-        on_account_info_page = ap.AccountInfoPage(driver)
-        on_shipping_page = shp.ShippingPage(driver)
-        on_payment_info_page = pip.PaymentInfoPage(driver)
-        on_confirmation_page = cp.ConfirmationPage(driver)
-        on_order_completion_page = sp.SuccessPage(driver)
-
-        # TEST STEPS
-        self.driver.get(env.page_url)
-        on_landing_page.select_product()
-        on_pdp.select_options_and_add_to_cart()
-        on_shopping_cart.click_checkout()
-        on_sign_in_page.continue_as_new_customer()
-        on_account_info_page.submit_account_information()
-        on_shipping_page.proceed_to_billing()
-        on_payment_info_page.select_payment_method()
-        on_confirmation_page.product_ordered_is_visible()
-        on_confirmation_page.confirm_total()
-        on_confirmation_page.submit_order()
-        on_order_completion_page.order_is_successful()
-        on_order_completion_page.continue_shopping()
-
-
-
-    # TODO Add more tests
+        on.OrderCompletionPage.order_is_successful(self)
+        on.OrderCompletionPage.continue_shopping(self)

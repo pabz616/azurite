@@ -9,7 +9,7 @@ class BasePage(object):
 
 class HomePage(BasePage):
     def is_title_matches(self):
-        timestamp = moment.now().strftime("%m-%d-%y_%h:%m")
+        timestamp = moment.now().strftime("%m-%d-%y_%H-%M-%S")
         file_loc = '../screenshots/'
         file_name = 'HomePage'
         file_type = '.png'

@@ -2,6 +2,7 @@ import moment
 from locators.page_elements import *
 from utils import environment as env
 
+
 class BasePage(object):
     def __init__(self, driver):
         self.driver = driver
@@ -29,3 +30,7 @@ class SignInPage(BasePage):
 
         sign_in_cta = self.driver.find_element(*SignInPageLocators.CTA)
         sign_in_cta.click()
+
+    def continue_as_new_customer(self):
+        guest_cta = self.driver.find_element(*SignInPageLocators.CONTINUE_CTA)
+        guest_cta.click()

@@ -27,6 +27,29 @@ class SignInPageLocators(object):
     PWD = (By.NAME, 'password')
     CTA = (By.ID, 'tdb5')
 
+    CONTINUE_CTA = (By.XPATH, '//a[contains(@id,"tdb4")]')
+
+
+class AccountInfoPageLocators(object):
+    GENDER1 = (By.XPATH, '//input[@value="m"]')
+    GENDER2 = (By.XPATH, '//input[@value="f"]')
+    FNAME_INPUT = (By.NAME, 'firstname')
+    LNAME_INPUT = (By.NAME, 'lastname')
+    DOB_INPUT = (By.NAME, 'dob')
+    EMAIL_INPUT = (By.NAME, 'email_address')
+    COMP_NAME = (By.NAME, 'company')
+    STREET_INPUT = (By.NAME, 'street_address')
+    BURB_INPUT = (By.NAME, 'suburb')
+    ZIP_INPUT = (By.NAME, 'postcode')
+    CITY_INPUT = (By.NAME, 'city')
+    STATE_INPUT = (By.NAME, 'state')
+    CTRY_LIST = (By.NAME, 'country')
+    CTRY_OPTION_USA = (By.XPATH, '//option[@value="223"]')
+    TEL_INPUT = (By.NAME, 'telephone')
+    PWD1_INPUT = (By.NAME, 'password')
+    PWD2_INPUT = (By.NAME, 'confirmation')
+    CTA = (By.ID, 'tdb4')
+
 
 class ShippingPageLocators(object):
     TITLE = (By.XPATH, '//h1[contains(.,"Delivery Information")]')
@@ -34,7 +57,7 @@ class ShippingPageLocators(object):
     SHIPPING_OPTION = (By.XPATH, '//strong[contains(.,"Flat Rate")]')
     SHIPPING_METHOD = (By.XPATH, '//td[contains(.,"Best Way")]')
     SHIPPING_ADDRESS = (By.XPATH, '(//div[contains(@class,"infoBoxContents")])[1]')
-    CTA = (By.ID, 'tdb6')
+    CTA = (By.XPATH, '//button[contains(@id,"tdb6")]')
 
 
 class PaymentInfoPageLocators(object):

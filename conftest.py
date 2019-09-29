@@ -18,7 +18,7 @@ def test_setup(request):
     if browser == 'chrome':
         # RUNNING NORMAL
         global driver
-        driver = webdriver.Chrome(executable_path='../drivers/chromedriver')
+        driver = webdriver.Chrome(executable_path='drivers/chromedriver77')
 
     elif browser == 'chrome-headless':
         # RUNNING HEADLESS
@@ -26,7 +26,7 @@ def test_setup(request):
         options.headless = True
         options.add_argument('--disable-gpu')
         options.add_argument('--window-size=1920,1080')
-        driver = webdriver.Chrome(options=options, executable_path='../drivers/chromedriver')
+        driver = webdriver.Chrome(options=options, executable_path='drivers/chromedriver77')
 
     driver.implicitly_wait(30)
     driver.maximize_window()
