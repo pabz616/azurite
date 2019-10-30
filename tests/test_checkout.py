@@ -4,7 +4,7 @@ from utils.environment import Pages as on
 
 
 @pytest.mark.usefixtures("test_setup")
-class TestCheckout():
+class TestCheckout:
 
     def test_checkout(self):
         # LAUNCH SITE

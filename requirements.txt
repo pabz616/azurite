@@ -1,0 +1,11 @@
+pytest
+pytest-selenium
+selenium
+pytest-html
+pytest-base-url
+pytest-xdist
+xlrd
+ipdb
+requests>=2.21.0
+Scrapy==1.6.0
+jsonschema==3.0.0

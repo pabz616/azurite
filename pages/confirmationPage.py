@@ -1,4 +1,3 @@
-import moment
 from locators.page_elements import *
 from re import sub
 from decimal import Decimal
@@ -11,15 +10,6 @@ class BasePage(object):
 
 class ConfirmationPage(BasePage):
     def title_is_visible(self):
-        #
-        timestamp = moment.now().strftime("%m-%d-%y_%H-%M-%S")
-        file_loc = '../screenshots/'
-        file_name = 'ConfirmationPage'
-        file_type = '.png'
-        screenshot = file_loc + file_name + '_' + timestamp + file_type
-
-        self.driver.save_screenshot(screenshot)
-        #
         confirmation_page_title = self.driver.find_element(*ConfirmationPageLocators.TITLE)
         assert confirmation_page_title.is_displayed()
 

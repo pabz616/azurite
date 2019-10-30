@@ -1,4 +1,3 @@
-import moment
 from locators.page_elements import *
 
 
@@ -10,15 +9,6 @@ class BasePage(object):
 class ProductDetailsPage(BasePage):
     def product_title_is_visible(self):
         product_title = self.driver.find_element(*PDPLocators.PDP_TITLE)
-        #
-        timestamp = moment.now().strftime("%m-%d-%y_%H-%M-%S")
-        file_loc = '../screenshots/'
-        file_name = 'ProductDetailsPage'
-        file_type = '.png'
-        screenshot = file_loc + file_name + '_' + timestamp + file_type
-
-        self.driver.save_screenshot(screenshot)
-        #
         assert product_title.is_displayed()
 
     def select_options_and_add_to_cart(self):

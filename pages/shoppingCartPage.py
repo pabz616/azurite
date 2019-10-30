@@ -1,4 +1,3 @@
-import moment
 from locators.page_elements import *
 
 
@@ -9,15 +8,6 @@ class BasePage(object):
 
 class ShoppingCartPage(BasePage):
     def check_all_ui(self):
-        #
-        timestamp = moment.now().strftime("%m-%d-%y_%H-%M-%S")
-        file_loc = '../screenshots/'
-        file_name = 'ShoppingCartPage'
-        file_type = '.png'
-        screenshot = file_loc + file_name + '_' + timestamp + file_type
-
-        self.driver.save_screenshot(screenshot)
-        #
         cart_page_title = self.driver.find_element(*MyCartPageLocators.CART_TITLE)
         assert cart_page_title.is_displayed()
 

@@ -1,4 +1,3 @@
-import moment
 from locators.page_elements import *
 
 
@@ -9,15 +8,6 @@ class BasePage(object):
 
 class SuccessPage(BasePage):
     def order_is_successful(self):
-        #
-        timestamp = moment.now().strftime("%m-%d-%y_%h:%m")
-        file_loc = '../screenshots/'
-        file_name = 'SuccessPage'
-        file_type = '.png'
-        screenshot = file_loc + file_name + '_' + timestamp + file_type
-
-        self.driver.save_screenshot(screenshot)
-        #
         success_page_title = self.driver.find_element(*SuccessPageLocators.TITLE)
         assert success_page_title.is_displayed()
 
