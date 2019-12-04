@@ -6,17 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27cb93db-557d-4b1e-bff7-988fca61b9a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pytest_wSelenium.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pytest_wSelenium.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/confirmationPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/confirmationPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/homePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/homePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/paymentInfoPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/paymentInfoPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/productDetailsPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/productDetailsPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/shippingPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/shippingPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/shoppingCartPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/shoppingCartPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/signInPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/signInPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/successPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/successPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_checkout.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
