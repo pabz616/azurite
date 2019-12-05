@@ -14,6 +14,7 @@ class TestCheckout:
 
         if site_status != status_ok:
             pytest.xfail("Site is down")
+            print("Unable to proceed with testing at this time!!")
         else:
             self.driver.get(env.base_url)
 
