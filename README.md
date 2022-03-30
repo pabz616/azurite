@@ -17,6 +17,9 @@ The automation framework is built upon PyTest and consists of the following file
 ```
 Set up environment in PyCharm IDE (Professional / Community)
 https://www.jetbrains.com/pycharm/download/
+
+update 3/30/22
+If using VS Code: visit https://code.visualstudio.com/docs/python/python-tutorial and follow the instructions
 ```
 ### Foundational Requirements
 ```
