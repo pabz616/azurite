@@ -24,6 +24,10 @@ If using VS Code: visit https://code.visualstudio.com/docs/python/python-tutoria
 ### Foundational Requirements
 ```
 1. install homebrew: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+- Run these two commands in your terminal to add Homebrew to your PATH:
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/pablovergara/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+- Run brew help to get started
 2. brew install python3
 3. brew cask install chromedriver
 4. pip3 install virtualenv
