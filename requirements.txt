@@ -1,5 +1,5 @@
 pytest
-pytest-selenium
+pytest-selenium>=3
 selenium
 pytest-html
 pytest-base-url
@@ -9,3 +9,4 @@ ipdb
 requests>=2.21.0
 Scrapy==1.8.2
 jsonschema==3.0.0
+assertpy

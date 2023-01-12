@@ -1,4 +1,5 @@
 import requests
+from assertpy.assertpy import assert_that
 
 
 url = "http://jsonplaceholder.typicode.com/comments"
