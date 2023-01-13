@@ -1,5 +1,5 @@
 import pytest
-from utils import environment as env
+from utils.test_data import base_url
 from utils.environment import Pages as on
 import urllib.request
 
@@ -8,14 +8,14 @@ import urllib.request
 class TestCheckout:
 
     def test_checkout(self):
-        siteUrl = urllib.request.urlopen(env.base_url)
+        siteUrl = urllib.request.urlopen(base_url)
         site_status = siteUrl.getcode()
         status_ok = 200
 
         if site_status != status_ok:
             pytest.xfail("Site is down")
         else:
-            self.driver.get(env.base_url)
+            self.driver.get(base_url)
 
             # TEST STEPS
             on.HomePage.select_product(self)

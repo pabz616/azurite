@@ -1,5 +1,5 @@
 from locators.page_elements import *
-from utils import environment as env
+from utils.test_data import *
 
 
 class BasePage(object):

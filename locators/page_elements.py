@@ -5,6 +5,14 @@ class HomePageLocators(object):
     PROD1 = (By.XPATH, '//a[contains(.,"Matrox G200 MMS")]')
 
 
+class GlobalHeaderLocators(object):
+    LOGO = (By.XPATH, '[//img[@title="Demosite"]]')
+    CTA1 = (By.ID, 'tdb1')
+    CTA2 = (By.ID, 'tdb2')
+    CTA3 = (By.ID, 'tdb3')
+    CTA4 = (By.ID, 'tdb4')
+
+
 class PDPLocators(object):
     PDP_TITLE = (By.XPATH, '//h1[contains(.,"Matrox G200 MMS")]')
     MEMORY_LIST = (By.XPATH, '//select[contains(@name,"4")]')
@@ -85,4 +93,3 @@ class ConfirmationPageLocators(object):
 class SuccessPageLocators(object):
     TITLE = (By.XPATH, '//h1[contains(.,"Your Order Has Been Processed!")]')
     CTA = (By.ID, 'tdb5')
-
