@@ -36,8 +36,6 @@ class GlobalHeader(BasePage):
         my_account_button = self.driver.find_element(*GlobalHeaderLocators.CTA3)
         my_account_button.click()
 
-    def logoff(self):
-
-
-
-# TODO clean up the repeated variables so they're used once and referenced often
+    def logout(self):
+        logoff_button = self.driver.find_element(*GlobalHeaderLocators.CTA4)
+        logoff_button.click()

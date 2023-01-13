@@ -9,9 +9,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27cb93db-557d-4b1e-bff7-988fca61b9a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pytest_wSelenium.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pytest_wSelenium.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_demo/test_project_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_demo/test_project_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/chromedriver77" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/chromedriver78" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/accountInfoPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/accountInfoPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/globalHeader.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/globalHeader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_create_new_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_create_new_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/test_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,14 +57,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/pablovergara/.virtualenvs/feature-tests/bin/python3",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/pablovergara/.virtualenvs/feature-tests/bin/python3&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="pytest_wSelenium" is-module-sdk="true">
@@ -68,6 +76,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/drivers" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>

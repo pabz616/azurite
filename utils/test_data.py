@@ -1,6 +1,9 @@
-import faker.providers.date_time
-import faker.providers.person
-from faker import Faker
+import faker.providers.date_time as dt
+import faker.providers.internet as it
+import faker.providers.person as person
+import faker.providers.job as company
+import faker.providers.address as addr
+import faker.providers.phone_number as tel
 
 """TEST DATA"""
 
@@ -15,26 +18,29 @@ cust_pwd = 'password123'
 keyword = 'Matrox G200 MMS'
 
 # NEW CUSTOMER TEST DATA
-# fake = faker.providers.person.Provider
-Faker.seed(0)
-job = faker.providers
-f = faker.providers.person.Provider
-date = faker.providers.date_time.Provider
+fake_fName = person.Provider.first_name
+fake_lName = person.Provider.first_name
+month = dt.Provider.month
+day = dt.Provider.day_of_week
+year = dt.Provider.year
+fake_email = it.Provider.ascii_free_email
+fake_dob = f'{month}/{day}/{year}'
+fake_job = company.Provider.job
+fake_address = addr.Provider.street_address
+fake_city = addr.Provider.city
+fake_zip = addr.Provider.postcode
+fake_phone = tel.Provider.phone_number
 
-month = date.month()
-day = date.day_of_week()
-year = date.year()
-
-cust_first_name = f.first_name()
-cust_last_name = f.last_name()
-cust_birthday = month+'/'+day+'/'+year
-cust_email_address = #todo add fake email
-cust_job = #todo add fake job
-cust_address = '45 Dragon Glass Rd'
-cust_suburb = 'South'
-cust_zip = '10300'
-cust_city = 'Westeros'
+cust_first_name = fake_fName
+cust_last_name = fake_lName
+cust_birthday = fake_dob
+cust_email_address = fake_email
+cust_job = fake_job
+cust_address = fake_address
+cust_suburb = ''
+cust_zip = fake_zip
+cust_city = fake_city
 cust_state = 'NY'
-cust_telephone = '302-122-3394'
-cust_password = 'daeny123'
-cust_confirm_pwd = 'daeny123'
+cust_telephone = fake_phone
+cust_password = 'password123'
+cust_confirm_pwd = 'password123'
