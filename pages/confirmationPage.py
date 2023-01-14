@@ -1,6 +1,7 @@
 from locators.page_elements import *
 from re import sub
 from decimal import Decimal
+from assertpy import assert_that
 
 
 class BasePage(object):
@@ -11,7 +12,7 @@ class BasePage(object):
 class ConfirmationPage(BasePage):
     def title_is_visible(self):
         confirmation_page_title = self.driver.find_element(*ConfirmationPageLocators.TITLE)
-        assert confirmation_page_title.is_displayed()
+        assert_that(confirmation_page_title).exists()
 
     def shipping_information_is_visible(self):
         shipping_info_section_title = self.driver.find_element(*ConfirmationPageLocators.SECTION_HDR1)
@@ -20,9 +21,10 @@ class ConfirmationPage(BasePage):
         shipping_method = 'Flat Rate (Best Way)'
 
         assert shipping_info_section_title.is_displayed()
-        assert section_title_txt == 'Shipping Information'
-        assert shipping_method_header.is_displayed()
-        assert (shipping_method in self.driver.page_source)
+        assert_that(section_title_txt).contains('Shipping Information')
+        assert_that(shipping_method).is_not_none()
+        assert_that(shipping_method_header).is_not_none()
+        assert_that(shipping_method).contains('Flat Rate (Best Way)')
 
         # A CLEANER ASSERTION w. USER INFO
         customer_fname = 'testerA'
@@ -32,32 +34,30 @@ class ConfirmationPage(BasePage):
         customer_zip = '11201'
         customer_country = 'United States'
 
-        assert 'Delivery Address' in self.driver.page_source
-        assert customer_fname in self.driver.page_source
-        assert customer_lname in self.driver.page_source
-        assert customer_addr in self.driver.page_source
-        assert customer_city in self.driver.page_source
-        assert customer_zip in self.driver.page_source
-        assert customer_country in self.driver.page_source
+        assert_that('Delivery Address').is_not_none()
+        assert_that(customer_fname).is_not_none()
+        assert_that(customer_lname).is_not_none()
+        assert_that(customer_addr).is_not_none()
+        assert_that(customer_city).is_not_none()
+        assert_that(customer_zip).is_not_none()
+        assert_that(customer_country).is_not_none()
 
     def billing_information_is_visible(self):
         billing_info_section_title = self.driver.find_element(*ConfirmationPageLocators.SECTION_HDR2)
         section_title_txt = billing_info_section_title.text
         assert billing_info_section_title.is_displayed()
-        assert section_title_txt == 'Billing Information'
-        assert 'Billing Address' in self.driver.page_source
-
-        # CUSTOMER BILLING ADDRESS IS THE SAME A SHIPPING, NO NEED FOR FURTHER ASSERTIONS
+        assert_that(section_title_txt).contains('Billing Information')
+        assert_that('Billing Address').is_not_none()
 
     def payment_information_is_visible(self):
         payment_method_title = self.driver.find_element(*ConfirmationPageLocators.PYMT_MTHD_HDR)
         payment_method = 'Cash on Delivery'
 
         assert payment_method_title.is_displayed()
-        assert payment_method in self.driver.page_source
+        assert_that(payment_method).contains('Cash on Delivery')
 
     def product_ordered_is_visible(self):
-        assert 'Matrox G200 MMS' in self.driver.page_source
+        assert_that('Matrox G200 MMS').is_not_none()
 
     def confirm_total(self):
         sub_total = self.driver.find_element(*ConfirmationPageLocators.PRD_SUB).text

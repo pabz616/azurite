@@ -10,27 +10,31 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope="class")
 def test_setup(request):
+    global driver
+
     from selenium import webdriver
     from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.chrome.service import Service as ChromeService
+    from webdriver_manager.chrome import ChromeDriverManager
 
     browser = request.config.getoption("--browser")
 
     if browser == 'chrome':
         # RUNNING NORMAL
-        global driver
-        driver = webdriver.Chrome(executable_path='drivers/chromedriver77')
+        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
     elif browser == 'chrome-headless':
         # RUNNING HEADLESS
         options = Options()
         options.headless = True
         options.add_argument('--disable-gpu')
-        options.add_argument('--window-size=1920,1080')
-        driver = webdriver.Chrome(options=options, executable_path='drivers/chromedriver77')
+        options.add_argument("start-maximized")
+        driver = webdriver.Chrome(options=options, service=ChromeService(ChromeDriverManager().install()))
 
     driver.implicitly_wait(30)
     driver.maximize_window()
     request.cls.driver = driver
+
     yield
     driver.close()
     driver.quit()
