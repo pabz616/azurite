@@ -1,9 +1,4 @@
-import faker.providers.date_time as dt
-import faker.providers.internet as it
-import faker.providers.person as person
-import faker.providers.job as company
-import faker.providers.address as addr
-import faker.providers.phone_number as tel
+import random
 
 """TEST DATA"""
 
@@ -17,30 +12,19 @@ cust_pwd = 'password123'
 # PRODUCT
 keyword = 'Matrox G200 MMS'
 
-# NEW CUSTOMER TEST DATA
-fake_fName = person.Provider.first_name
-fake_lName = person.Provider.first_name
-month = dt.Provider.month
-day = dt.Provider.day_of_week
-year = dt.Provider.year
-fake_email = it.Provider.ascii_free_email
-fake_dob = f'{month}/{day}/{year}'
-fake_job = company.Provider.job
-fake_address = addr.Provider.street_address
-fake_city = addr.Provider.city
-fake_zip = addr.Provider.postcode
-fake_phone = tel.Provider.phone_number
+rand_id = str(random.randint(1, 9999))
 
-cust_first_name = fake_fName
-cust_last_name = fake_lName
-cust_birthday = fake_dob
-cust_email_address = fake_email
-cust_job = fake_job
-cust_address = fake_address
-cust_suburb = ''
-cust_zip = fake_zip
-cust_city = fake_city
+# NEW CUSTOMER TEST DATA
+cust_first_name = f"AWESOME{rand_id}"
+cust_last_name = f"TESTER{rand_id}"
+cust_birthday = "01/01/1979"
+cust_email_address = cust_first_name+"@mail.com"
+cust_job = "QA TESTER"
+cust_address = "123 MAIN STREET"
+cust_suburb = 'QA'
+cust_zip = "10010"
+cust_city = "NEW YORK"
 cust_state = 'NY'
-cust_telephone = fake_phone
+cust_telephone = "21233334455"
 cust_password = 'password123'
 cust_confirm_pwd = 'password123'

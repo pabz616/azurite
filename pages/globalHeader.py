@@ -36,6 +36,6 @@ class GlobalHeader(BasePage):
         my_account_button = self.driver.find_element(*GlobalHeaderLocators.CTA3)
         my_account_button.click()
 
-    def logout(self):
+    def click_logout(self):
         logoff_button = self.driver.find_element(*GlobalHeaderLocators.CTA4)
         logoff_button.click()

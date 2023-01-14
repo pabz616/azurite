@@ -1,5 +1,6 @@
 from locators.page_elements import *
 from utils.test_data import *
+import time
 
 
 class BasePage(object):
@@ -31,7 +32,7 @@ class AccountInfoPage(BasePage):
         name_first.send_keys(cust_first_name)
         name_last.send_keys(cust_last_name)
         dob.send_keys(cust_birthday)
-        email.send_keys(cust_email)
+        email.send_keys(cust_email_address)
         comp.send_keys(cust_job)
         address.send_keys(cust_address)
         suburb.send_keys(cust_suburb)
@@ -44,7 +45,6 @@ class AccountInfoPage(BasePage):
         password.send_keys(cust_password)
         confirm_pwd.send_keys(cust_confirm_pwd)
         submit_cta.click()
-
 
 
 

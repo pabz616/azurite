@@ -1,22 +1,15 @@
 import pytest
 from utils.test_data import base_url
 from utils.environment import Pages as on
-import urllib.request
 
 
 @pytest.mark.usefixtures("test_setup")
 class TestCreateAccount:
     def test_create_new_user(self):
-        siteUrl = urllib.request.urlopen(base_url)
-        site_status = siteUrl.getcode()
-        status_ok = 200
+        self.driver.get(base_url)
+        on.GlobalHeader.navigate_to_my_account(self)
+        on.SignInPage.continue_as_new_customer(self)
+        on.AccountInfoPage.submit_account_information(self)
+        on.GlobalHeader.click_logout(self)
 
-        if site_status != status_ok:
-            pytest.xfail("Site is down")
-        else:
-            self.driver.get(base_url)
 
-            on.GlobalHeader.click_my_account(self)
-            on.SignInPage.continue_as_new_customer(self)
-            on.AccountInfoPage.submit_account_information(self)
-            on.GlobalHeader.logout(self)
