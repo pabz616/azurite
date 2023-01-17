@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class HomePageLocators(object):
-    PROD1 = (By.XPATH, '//a[contains(.,"Matrox G200 MMS")]')
+    pass
 
 
 class GlobalHeaderLocators(object):
