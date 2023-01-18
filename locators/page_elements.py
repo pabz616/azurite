@@ -59,6 +59,12 @@ class AccountInfoPageLocators(object):
     CTA = (By.ID, 'tdb4')
 
 
+class AccountSuccessLocators(object):
+    TITLE = (By.XPATH, '//h1[contains(.,"Your Account Has Been Created!")]')
+    BODY = (By.XPATH, '//div[@class="contentText"]')
+    CTA = (By.ID, 'tdb5')
+
+
 class ShippingPageLocators(object):
     TITLE = (By.XPATH, '//h1[contains(.,"Delivery Information")]')
     SHIPPING_SUBTITLE = (By.XPATH, '//h2[contains(.,"Shipping")]')
@@ -85,6 +91,7 @@ class ConfirmationPageLocators(object):
     BILL_ADDR_HDR = (By.XPATH, '//strong[contains(.,"Billing Address")]')
     PYMT_MTHD_HDR = (By.XPATH, '//strong[contains(.,"Payment Method")]')
     PRD_SUB = (By.XPATH, '(//td[contains(@class,"main")])[2]')
+    PRD = (By.XPATH, '#bodyContent > form > div > div:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2)')
     SHIP_COST = (By.XPATH, '(//td[contains(@class,"main")])[4]')
     PRD_TOTAL = (By.XPATH, '(//td[contains(@class,"main")])[6]')
     CTA = (By.ID, 'tdb5')

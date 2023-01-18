@@ -57,7 +57,8 @@ class ConfirmationPage(BasePage):
         assert_that(payment_method).contains('Cash on Delivery')
 
     # def product_ordered_is_visible(self):
-    #     assert_that('Matrox G200 MMS').is_not_none()
+    #     product_ordered = self.driver.find_element(*ConfirmationPageLocators.PRD)
+    #     assert_that(product_ordered).is_not_none()
 
     def confirm_total(self):
         sub_total = self.driver.find_element(*ConfirmationPageLocators.PRD_SUB).text

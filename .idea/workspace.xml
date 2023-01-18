@@ -13,8 +13,8 @@
       <change beforePath="$PROJECT_DIR$/locators/page_elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/page_elements.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/confirmationPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/confirmationPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/homePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/homePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/productDetailsPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/productDetailsPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_checkout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/environment.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
