@@ -11,7 +11,7 @@ class ProductDetailsPage(BasePage):
         product_title = self.driver.find_element(*PDPLocators.PDP_TITLE)
         assert product_title.is_displayed()
 
-    def select_options_and_add_to_cart(self):
+    def select_options(self):
         # SELECTING THE MEMORY
         ddl_memory = self.driver.find_element(*PDPLocators.MEMORY_LIST)
         ddl_memory.click()
@@ -26,6 +26,7 @@ class ProductDetailsPage(BasePage):
         o_premium = self.driver.find_element(*PDPLocators.MODEL_VALUE)
         o_premium.click()
 
+    def add_to_cart(self):
         # ADD TO CART
         add_to_cart = self.driver.find_element(*PDPLocators.CTA)
         add_to_cart.click()

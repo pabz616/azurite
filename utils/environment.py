@@ -9,6 +9,7 @@ from pages import homePage as hp, \
     signInPage as sip, \
     successPage as sp, \
     accountInfoPage as ap, \
+    accountSuccessPage as asp, \
     globalHeader as header
 
 
@@ -24,6 +25,7 @@ class Pages(object):
     ConfirmationPage = cp.ConfirmationPage
     OrderCompletionPage = sp.SuccessPage
     AccountInfoPage = ap.AccountInfoPage
+    AccountSuccessPage = asp.AccountSuccessPage
 
 # PATH TO REPORTS
 # REPORT_NAME.html
