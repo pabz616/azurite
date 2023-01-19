@@ -4,6 +4,7 @@ from pages import homePage as hp, \
     confirmationPage as cp, \
     paymentInfoPage as pip, \
     productDetailsPage as pdp, \
+    productListPage as plp, \
     shippingPage as shp, \
     shoppingCartPage as scp, \
     signInPage as sip, \
@@ -17,6 +18,7 @@ from pages import homePage as hp, \
 class Pages(object):
     GlobalHeader = header.GlobalHeader
     HomePage = hp.HomePage
+    PLP = plp.ProductListPage
     PDP = pdp.ProductDetailsPage
     ShoppingCart = scp.ShoppingCartPage
     SignInPage = sip.SignInPage

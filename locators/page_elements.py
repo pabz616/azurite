@@ -13,6 +13,16 @@ class GlobalHeaderLocators(object):
     CTA4 = (By.ID, 'tdb4')
 
 
+class PLPLocators(object):
+    PLP_TITLE = (By.CLASS_NAME, '//h1')
+    NO_ITEM_MSG = (By.CLASS_NAME, 'contentText')
+    PROD_DATA = (By.XPATH, '//table[@class="productListingData"]')
+    PROD_NAME = (By.XPATH, '//*[@id="bodyContent"]/div/div/div[1]/div[2]/table/tbody/tr[1]/td[2]')
+    PROD_PRICE = (By.XPATH, '//*[@id="bodyContent"]/div/div/div[1]/div[2]/table/tbody/tr[1]/td[3]')
+    PROD_IMG = (By.XPATH, '(//img)[2]')
+    CTA = (By.ID, 'tdb4')
+
+
 class PDPLocators(object):
     PDP_TITLE = (By.XPATH, '//h1[contains(.,"Matrox G200 MMS")]')
     MEMORY_LIST = (By.XPATH, '//select[contains(@name,"4")]')

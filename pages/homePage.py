@@ -28,9 +28,22 @@ class HomePage(BasePage):
         prod1 = self.driver.find_element(By.LINK_TEXT, f'{product_selected}')
         prod1.click()
 
-    def select_from_category(self):
-        """Categories Section"""
-        pass
+    def select_from_hardware_catalog(self):
+        """Categories Section: Hardware"""
+
+        hardware_catalog = {
+            1_4: 'Graphics Cards',
+            1_5: 'Printers',
+            1_6: 'Monitors',
+            1_7: 'Speakers',
+            1_8: 'Keyboards',
+            1_9: 'Mice',
+            1_16: 'Memory',
+            1_17: 'CDROM Drives',
+        }
+        item_selected = random.choice(list(hardware_catalog.values()))
+        prod1 = self.driver.find_element(By.LINK_TEXT, f'{item_selected}')
+        prod1.click()
 
     def select_from_a_manufacturer(self):
         """Manufacturer's Section"""
