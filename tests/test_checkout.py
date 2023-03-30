@@ -57,7 +57,6 @@ class TestCheckout:
         """PURCHASE FROM CATEGORIES SECTION - HARDWARE CATALOG: MONTHLY SPECIAL"""
         self.driver.get(base_url+'?cPath=1')
         on.HardwareCatalogPage.selectMonthlyFeaturedProduct(self)
-        time.sleep(4)
         on.PDP.add_to_cart(self)
         on.ShoppingCart.click_checkout(self)
         on.SignInPage.continue_as_returning_customer(self)
@@ -70,10 +69,28 @@ class TestCheckout:
     def test_purchase_from_software_catalog(self):
         """PURCHASE ITEM FROM CATEGORY SECTION: SOFTWARE"""
         self.driver.get(base_url+'?cPath=2')
+        on.SoftwareCatalogPage.selectAction(self)
+        on.PDP.add_to_cart(self)
+        on.ShoppingCart.click_checkout(self)
+        on.SignInPage.continue_as_returning_customer(self)
+        on.ShippingPage.proceed_to_billing(self)
+        on.PaymentInfoPage.select_payment_method(self)
+        on.ConfirmationPage.submit_order(self)
+        on.OrderCompletionPage.confirm_order_is_successful_and_continue(self)
+        on.GlobalHeader.click_logout(self)
 
     def test_purchase_monthly_software_special(self):
         """PURCHASE FROM CATEGORIES SECTION - SOFTWARE CATALOG: MONTHLY SPECIAL"""
-        pass
+        self.driver.get(base_url + '?cPath=2')
+        on.SoftwareCatalogPage.selectMonthlyFeaturedProduct(self)
+        on.PDP.add_to_cart(self)
+        on.ShoppingCart.click_checkout(self)
+        on.SignInPage.continue_as_returning_customer(self)
+        on.ShippingPage.proceed_to_billing(self)
+        on.PaymentInfoPage.select_payment_method(self)
+        on.ConfirmationPage.submit_order(self)
+        on.OrderCompletionPage.confirm_order_is_successful_and_continue(self)
+        on.GlobalHeader.click_logout(self)
 
     def test_purchase_from_dvd_movies_catalog(self):
         """PURCHASE ITEM FROM CATEGORY SECTION: DVDs"""
