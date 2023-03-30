@@ -11,7 +11,11 @@ from pages import homePage as hp, \
     successPage as sp, \
     accountInfoPage as ap, \
     accountSuccessPage as asp, \
-    globalHeader as header
+    globalHeader as header,\
+    hardwareCatalogPage as hc, \
+    softwareCatalogPage as sc, \
+    dvdCatalogPage as dc, \
+    gadgetsCatalogPage as gc
 
 
 # PAGES
@@ -28,6 +32,10 @@ class Pages(object):
     OrderCompletionPage = sp.SuccessPage
     AccountInfoPage = ap.AccountInfoPage
     AccountSuccessPage = asp.AccountSuccessPage
+    HardwareCatalogPage = hc.HardwareCatalogPage
+    SoftwareCatalogPage = sc.SoftwareCatalogPage
+    DVDMoviesCatalogPage = dc.DVDMoviesCatalogPage
+    GadgetsCatalogPage = gc.GadgetsCatalogPage
 
 # PATH TO REPORTS
 # REPORT_NAME.html

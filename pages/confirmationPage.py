@@ -23,7 +23,7 @@ class ConfirmationPage(BasePage):
         value = self.driver.find_element(*ConfirmationPageLocators.PRD_TOTAL).text
 
         '''CONFIRMS PAGE TITLE'''
-        assert_that(confirmation_page_title).exists()
+        assert confirmation_page_title.is_displayed()
 
         '''CONFIRMS PRODUCT TO BE PURCHASED IS DISPLAYED'''
         #     product_ordered = self.driver.find_element(*ConfirmationPageLocators.PRD)
