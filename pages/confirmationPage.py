@@ -10,14 +10,27 @@ class BasePage(object):
 
 
 class ConfirmationPage(BasePage):
-    def title_is_visible(self):
-        confirmation_page_title = self.driver.find_element(*ConfirmationPageLocators.TITLE)
-        assert_that(confirmation_page_title).exists()
 
-    def shipping_information_is_visible(self):
+    def submit_order(self):
+        confirmation_page_title = self.driver.find_element(*ConfirmationPageLocators.TITLE)
         shipping_info_section_title = self.driver.find_element(*ConfirmationPageLocators.SECTION_HDR1)
-        section_title_txt = shipping_info_section_title.text
         shipping_method_header = self.driver.find_element(*ConfirmationPageLocators.SHIP_MTHD_HDR)
+        billing_info_section_title = self.driver.find_element(*ConfirmationPageLocators.SECTION_HDR2)
+        confirm_order_cta = self.driver.find_element(*ConfirmationPageLocators.CTA)
+        payment_method_title = self.driver.find_element(*ConfirmationPageLocators.PYMT_MTHD_HDR)
+        sub_total = self.driver.find_element(*ConfirmationPageLocators.PRD_SUB).text
+        ship_cost = self.driver.find_element(*ConfirmationPageLocators.SHIP_COST).text
+        value = self.driver.find_element(*ConfirmationPageLocators.PRD_TOTAL).text
+
+        '''CONFIRMS PAGE TITLE'''
+        assert confirmation_page_title.is_displayed()
+
+        '''CONFIRMS PRODUCT TO BE PURCHASED IS DISPLAYED'''
+        #     product_ordered = self.driver.find_element(*ConfirmationPageLocators.PRD)
+        #     assert_that(product_ordered).is_not_none()
+
+        '''CONFIRMS SHIPPING INFORMATION IS VISIBLE'''
+        section_title_txt = shipping_info_section_title.text
         shipping_method = 'Flat Rate (Best Way)'
 
         assert shipping_info_section_title.is_displayed()
@@ -42,38 +55,24 @@ class ConfirmationPage(BasePage):
         assert_that(customer_zip).is_not_none()
         assert_that(customer_country).is_not_none()
 
-    def billing_information_is_visible(self):
-        billing_info_section_title = self.driver.find_element(*ConfirmationPageLocators.SECTION_HDR2)
+        '''CONFIRMS BILLING INFORMATION'''
         section_title_txt = billing_info_section_title.text
         assert billing_info_section_title.is_displayed()
         assert_that(section_title_txt).contains('Billing Information')
         assert_that('Billing Address').is_not_none()
 
-    def payment_information_is_visible(self):
-        payment_method_title = self.driver.find_element(*ConfirmationPageLocators.PYMT_MTHD_HDR)
+        '''CONFIRMS PAYMENT INFORMATION'''
         payment_method = 'Cash on Delivery'
-
         assert payment_method_title.is_displayed()
         assert_that(payment_method).contains('Cash on Delivery')
 
-    # def product_ordered_is_visible(self):
-    #     product_ordered = self.driver.find_element(*ConfirmationPageLocators.PRD)
-    #     assert_that(product_ordered).is_not_none()
-
-    def confirm_total(self):
-        sub_total = self.driver.find_element(*ConfirmationPageLocators.PRD_SUB).text
+        '''CONFIRMS TOTAL'''
         sub_chrg = Decimal(sub(r'[^\d.]', '', sub_total))
-
-        ship_cost = self.driver.find_element(*ConfirmationPageLocators.SHIP_COST).text
         shipping_chrg = Decimal(sub(r'[^\d.]', '', ship_cost))
-
         calc_total = (sub_chrg+shipping_chrg)
-
-        value = self.driver.find_element(*ConfirmationPageLocators.PRD_TOTAL).text
         displayed_total = Decimal(sub(r'[^\d.]', '', value))
 
         assert calc_total == displayed_total
 
-    def submit_order(self):
-        confirm_order_cta = self.driver.find_element(*ConfirmationPageLocators.CTA)
+        '''CONFIRM ORDER'''
         confirm_order_cta.click()

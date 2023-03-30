@@ -4,19 +4,25 @@ from pages import homePage as hp, \
     confirmationPage as cp, \
     paymentInfoPage as pip, \
     productDetailsPage as pdp, \
+    productListPage as plp, \
     shippingPage as shp, \
     shoppingCartPage as scp, \
     signInPage as sip, \
     successPage as sp, \
     accountInfoPage as ap, \
     accountSuccessPage as asp, \
-    globalHeader as header
+    globalHeader as header,\
+    hardwareCatalogPage as hc, \
+    softwareCatalogPage as sc, \
+    dvdCatalogPage as dc, \
+    gadgetsCatalogPage as gc
 
 
 # PAGES
 class Pages(object):
     GlobalHeader = header.GlobalHeader
     HomePage = hp.HomePage
+    PLP = plp.ProductListPage
     PDP = pdp.ProductDetailsPage
     ShoppingCart = scp.ShoppingCartPage
     SignInPage = sip.SignInPage
@@ -26,6 +32,10 @@ class Pages(object):
     OrderCompletionPage = sp.SuccessPage
     AccountInfoPage = ap.AccountInfoPage
     AccountSuccessPage = asp.AccountSuccessPage
+    HardwareCatalogPage = hc.HardwareCatalogPage
+    SoftwareCatalogPage = sc.SoftwareCatalogPage
+    DVDMoviesCatalogPage = dc.DVDMoviesCatalogPage
+    GadgetsCatalogPage = gc.GadgetsCatalogPage
 
 # PATH TO REPORTS
 # REPORT_NAME.html

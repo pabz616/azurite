@@ -9,10 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27cb93db-557d-4b1e-bff7-988fca61b9a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locators/page_elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/page_elements.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/confirmationPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/confirmationPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/homePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/homePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/shippingPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/shippingPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/successPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/successPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_checkout.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/environment.py" afterDir="false" />
     </list>

@@ -7,24 +7,22 @@ class BasePage(object):
 
 
 class ShippingPage(BasePage):
-    def title_is_visible(self):
+    def proceed_to_billing(self):
         shipping_page_title = self.driver.find_element(*ShippingPageLocators.TITLE)
-        assert shipping_page_title.is_displayed()
-
-    def confirm_shipping_method(self):
         shipping_method_title = self.driver.find_element(*ShippingPageLocators.SHIPPING_SUBTITLE)
-        assert shipping_method_title.is_displayed()
-
         shipping_option = self.driver.find_element(*ShippingPageLocators.SHIPPING_OPTION)
-        assert shipping_option.is_displayed()
-
         shipping_method = self.driver.find_element(*ShippingPageLocators.SHIPPING_METHOD)
+        shipping_address = self.driver.find_element(*ShippingPageLocators.SHIPPING_ADDRESS)
+        continue_cta = self.driver.find_element(*ShippingPageLocators.CTA)
+
+        ''' CONFIRM SHIPPING METHOD'''
+        assert shipping_page_title.is_displayed()
+        assert shipping_method_title.is_displayed()
+        assert shipping_option.is_displayed()
         assert shipping_method.is_displayed()
 
-    def confirm_shipping_address(self):
-        shipping_address = self.driver.find_element(*ShippingPageLocators.SHIPPING_ADDRESS)
-        shipping_address.is_displayed()
+        '''CONFIRM SHIPPING ADDRESS'''
+        assert shipping_address.is_displayed()
 
-    def proceed_to_billing(self):
-        continue_cta = self.driver.find_element(*ShippingPageLocators.CTA)
+        '''PROCEED TO BILLING INFO. STEP'''
         continue_cta.click()
