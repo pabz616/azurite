@@ -95,14 +95,41 @@ class TestCheckout:
     def test_purchase_from_dvd_movies_catalog(self):
         """PURCHASE ITEM FROM CATEGORY SECTION: DVDs"""
         self.driver.get(base_url+'?cPath=3')
+        on.DVDMoviesCatalogPage.selectActionMovies(self)
+        on.PDP.add_to_cart(self)
+        on.ShoppingCart.click_checkout(self)
+        on.SignInPage.continue_as_returning_customer(self)
+        on.ShippingPage.proceed_to_billing(self)
+        on.PaymentInfoPage.select_payment_method(self)
+        on.ConfirmationPage.submit_order(self)
+        on.OrderCompletionPage.confirm_order_is_successful_and_continue(self)
+        on.GlobalHeader.click_logout(self)
 
     def test_purchase_monthly_dvd_special(self):
         """PURCHASE FROM CATEGORIES SECTION - DVD CATALOG: MONTHLY SPECIAL"""
-        pass
+        self.driver.get(base_url+'?cPath=3')
+        on.DVDMoviesCatalogPage.selectMonthlyFeaturedProduct(self)
+        on.PDP.add_to_cart(self)
+        on.ShoppingCart.click_checkout(self)
+        on.SignInPage.continue_as_returning_customer(self)
+        on.ShippingPage.proceed_to_billing(self)
+        on.PaymentInfoPage.select_payment_method(self)
+        on.ConfirmationPage.submit_order(self)
+        on.OrderCompletionPage.confirm_order_is_successful_and_continue(self)
+        on.GlobalHeader.click_logout(self)
 
     def test_purchase_from_gadgets_catalog(self):
         """PURCHASE ITEM FROM CATEGORY SECTION: GADGET"""
         self.driver.get(base_url+'?cPath=21')
+        on.GadgetsCatalogPage.selectAvailableGadget(self)
+        on.PDP.add_to_cart(self)
+        on.ShoppingCart.click_checkout(self)
+        on.SignInPage.continue_as_returning_customer(self)
+        on.ShippingPage.proceed_to_billing(self)
+        on.PaymentInfoPage.select_payment_method(self)
+        on.ConfirmationPage.submit_order(self)
+        on.OrderCompletionPage.confirm_order_is_successful_and_continue(self)
+        on.GlobalHeader.click_logout(self)
 
     def test_purchase_from_manufacturers_products_selection(self):
         """PURCHASE FROM MANUFACTURERS - PRODUCT SELECTION"""
