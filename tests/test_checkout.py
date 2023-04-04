@@ -133,15 +133,43 @@ class TestCheckout:
 
     def test_purchase_from_manufacturers_products_selection(self):
         """PURCHASE FROM MANUFACTURERS - PRODUCT SELECTION"""
-        pass
+        self.driver.get(base_url)
+        on.HomePage.select_from_a_manufacturer(self)
+        on.PDP.add_to_cart(self)
+        on.ShoppingCart.click_checkout(self)
+        on.SignInPage.continue_as_returning_customer(self)
+        on.ShippingPage.proceed_to_billing(self)
+        on.PaymentInfoPage.select_payment_method(self)
+        on.ConfirmationPage.submit_order(self)
+        on.OrderCompletionPage.confirm_order_is_successful_and_continue(self)
+        on.GlobalHeader.click_logout(self)
 
     def test_purchase_from_quick_finds(self):
         """PURCHASE FROM QUICK FIND - SEARCH"""
-        pass
+        self.driver.get(base_url)
+        on.HomePage.search_for_product(self)
+        on.PDP.click_buyNow_on_searchResults(self)
+        on.PDP.add_to_cart(self)
+        on.ShoppingCart.click_checkout(self)
+        on.SignInPage.continue_as_returning_customer(self)
+        on.ShippingPage.proceed_to_billing(self)
+        on.PaymentInfoPage.select_payment_method(self)
+        on.ConfirmationPage.submit_order(self)
+        on.OrderCompletionPage.confirm_order_is_successful_and_continue(self)
+        on.GlobalHeader.click_logout(self)
 
     def test_purchase_from_whats_new(self):
         """PURCHASE FROM WHAT'S NEW SECTION - FEATURED ITEM"""
-        pass
+        self.driver.get(base_url)
+        on.HomePage.select_featured_product(self)
+        on.PDP.add_to_cart(self)
+        on.ShoppingCart.click_checkout(self)
+        on.SignInPage.continue_as_returning_customer(self)
+        on.ShippingPage.proceed_to_billing(self)
+        on.PaymentInfoPage.select_payment_method(self)
+        on.ConfirmationPage.submit_order(self)
+        on.OrderCompletionPage.confirm_order_is_successful_and_continue(self)
+        on.GlobalHeader.click_logout(self)
 
     def test_purchase_from_bestsellers(self):
         """PURCHASE FROM BEST SELLERS SECTION - FEATURED ITEM"""
