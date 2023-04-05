@@ -57,7 +57,7 @@ class SoftwareCatalogLocators(object):
     # NEW PRODUCTS
     IMG = (By.XPATH, '//img[contains(@title, "Unreal Tournament")]')
     NAME = (By.XPATH, '(//a[contains(., "Unreal Tournament")])[1]')
-    PRICE = (By.XPATH,  '//td[contains(.,"89.99")]')
+    PRICE = (By.XPATH, '//td[contains(.,"89.99")]')
 
     # PDP
     CTA = (By.ID, 'tdb4')
@@ -74,10 +74,10 @@ class DVDMoviesCatalogLocators(object):
 
     # DVD MOVIE CATALOG
     o_action = (By.XPATH, '//a[contains(., "Action")]')
-    o_cartoons = (By.XPATH,'//a[contains(., "Cartoons")]')
+    o_cartoons = (By.XPATH, '//a[contains(., "Cartoons")]')
     o_comedy = (By.XPATH, '//a[contains(., "Comedy")]')
     o_drama = (By.XPATH, '//a[contains(., "Drama"]')
-    o_science_fiction = (By.XPATH,  '//a[contains(., "Science Fiction")]')
+    o_science_fiction = (By.XPATH, '//a[contains(., "Science Fiction")]')
     o_thriller = (By.XPATH, '//a[contains(., "Thriller")]')
 
     # NEW PRODUCTS
@@ -96,6 +96,19 @@ class GadgetsCatalogLocators(object):
 
     # PDP
     CTA = (By.ID, 'tdb4')
+
+
+class ManufacturersLocator(object):
+    LIST = (By.XPATH, '//select[@name="manufacturers_id"]')
+    OPTION_HP = (By.XPATH, '//option[@value="9"]')
+
+
+class QuickFindLocator(object):
+    INPUT = (By.XPATH, '//input[@name="keywords"]')
+
+
+class FeaturedItemLocator(object):
+    CELL = (By.XPATH, '(//div[contains(@class, "infoBoxContents")])[4]')
 
 
 class PLPLocators(object):
