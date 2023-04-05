@@ -111,6 +111,29 @@ class FeaturedItemLocator(object):
     CELL = (By.XPATH, '(//div[contains(@class, "infoBoxContents")])[4]')
 
 
+class InformationLocators(object):
+    LINK_SHP_RT = (By.XPATH, '//a[contains(., "Shipping")]')
+    LINK_PRIVACY = (By.XPATH, '//a[contains(., "Privacy")]')
+    LINK_CONDITIONS = (By.XPATH, '//a[contains(., "Conditions")]')
+    LINK_CONTACT = (By.XPATH, '//a[contains(., "Contact")]')
+
+
+class ShoppingCartLocator(object):
+    CELL = (By.XPATH, '(//div[contains(@class, "infoBoxContents")])[6]')
+
+
+class SpecialsLocator(object):
+    CELL = (By.XPATH, '(//div[contains(@class, "infoBoxContents")])[8]')
+
+
+class ReviewLocator(object):
+    CELL = (By.XPATH, '(//div[contains(@class, "infoBoxContents")])[9]')
+
+
+class CurrencyListLocator(object):
+    MENU = (By.XPATH, '//select[@name="currency"]')
+
+
 class PLPLocators(object):
     PLP_TITLE = (By.XPATH, '//h1')
     NO_ITEM_MSG = (By.XPATH, '//div[@class="contentText"]/p')
