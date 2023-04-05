@@ -47,15 +47,20 @@ class HomePage(BasePage):
 
     def select_from_a_manufacturer(self):
         """Manufacturer's Section"""
-        pass
+        manufacturers_list = self.driver.find_element(*ManufacturersLocator.LIST)
+        select_HP = self.driver.find_element(*ManufacturersLocator.OPTION_HP)
+        manufacturers_list.click()
+        select_HP.click()
 
     def search_for_product(self):
         """Quick Find Section"""
-        pass
+        search_input = self.driver.find_element(*QuickFindLocator.INPUT)
+        search_input.send_keys("Matrox G200 MMS", '\ue007')
 
     def select_featured_product(self):
         """What's New Section"""
-        pass
+        featured_item = self.driver.find_element(*FeaturedItemLocator.CELL)
+        featured_item.click()
 
     def select_from_bestseller(self):
         """Best Seller's Section"""
