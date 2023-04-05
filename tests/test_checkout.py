@@ -173,15 +173,42 @@ class TestCheckout:
 
     def test_purchase_from_bestsellers(self):
         """PURCHASE FROM BEST SELLERS SECTION - FEATURED ITEM"""
-        pass
+        self.driver.get(base_url)
+        on.HomePage.select_from_bestseller(self)
+        on.PDP.add_to_cart(self)
+        on.ShoppingCart.click_checkout(self)
+        on.SignInPage.continue_as_returning_customer(self)
+        on.ShippingPage.proceed_to_billing(self)
+        on.PaymentInfoPage.select_payment_method(self)
+        on.ConfirmationPage.submit_order(self)
+        on.OrderCompletionPage.confirm_order_is_successful_and_continue(self)
+        on.GlobalHeader.click_logout(self)
 
     def test_purchase_from_specials(self):
         """PURCHASE FROM SPECIALS SECTION - FEATURED ITEM"""
-        pass
+        self.driver.get(base_url)
+        on.HomePage.select_from_specials(self)
+        on.PDP.add_to_cart(self)
+        on.ShoppingCart.click_checkout(self)
+        on.SignInPage.continue_as_returning_customer(self)
+        on.ShippingPage.proceed_to_billing(self)
+        on.PaymentInfoPage.select_payment_method(self)
+        on.ConfirmationPage.submit_order(self)
+        on.OrderCompletionPage.confirm_order_is_successful_and_continue(self)
+        on.GlobalHeader.click_logout(self)
 
     def test_purchase_from_reviews(self):
         """PURCHASE FROM PRODUCT REVIEWS SECTION"""
-        pass
+        self.driver.get(base_url)
+        on.HomePage.select_product_review(self)
+        on.PDP.add_to_cart(self)
+        on.ShoppingCart.click_checkout(self)
+        on.SignInPage.continue_as_returning_customer(self)
+        on.ShippingPage.proceed_to_billing(self)
+        on.PaymentInfoPage.select_payment_method(self)
+        on.ConfirmationPage.submit_order(self)
+        on.OrderCompletionPage.confirm_order_is_successful_and_continue(self)
+        on.GlobalHeader.click_logout(self)
 
     def test_purchase_with_euros(self):
         """PURCHASE FROM PRODUCTS, CONVERTING THE SITE TO EUROS"""
