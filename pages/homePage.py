@@ -64,12 +64,28 @@ class HomePage(BasePage):
 
     def select_from_bestseller(self):
         """Best Seller's Section"""
-        pass
+        product_catalog = {
+            1: 'Matrox G200 MMS',
+            22: 'Unreal Tournament',
+            28: 'Samsung Galaxy Tab',
+            16: 'Courage Under Fire',
+            12: 'Die Hard With A Vengeance',
+            26: 'Microsoft IntelliMouse Explorer',
+            25: 'Microsoft Internet Keyboard PS/2',
+            27: 'Hewlett Packard LaserJet 1100Xi',
+            21: 'SWAT 3: Close Quarters Battle',
+            19: "There's Something About Mary"
+        }
+        product_selected = random.choice(list(product_catalog.values()))
+        prod1 = self.driver.find_element(By.LINK_TEXT, f'{product_selected}')
+        prod1.click()
 
     def select_from_specials(self):
         """Specials Section"""
-        pass
+        special_item = self.driver.find_element(*SpecialsLocator.CELL)
+        special_item.click()
 
     def select_product_review(self):
         """Product Reviews Section"""
-        pass
+        reviews_item = self.driver.find_element(*ReviewLocator.CELL)
+        reviews_item.click()
