@@ -30,3 +30,7 @@ class ProductDetailsPage(BasePage):
         # ADD TO CART
         add_to_cart = self.driver.find_element(*PDPLocators.CTA)
         add_to_cart.click()
+
+    def click_buyNow_on_searchResults(self):
+        buyNow = self.driver.find_element(*PDPLocators.CTA)
+        buyNow.click()
