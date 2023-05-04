@@ -2,3 +2,4 @@
 venv
 ./drivers
 api_env
+./pycache
