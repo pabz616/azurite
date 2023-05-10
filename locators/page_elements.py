@@ -2,7 +2,21 @@ from selenium.webdriver.common.by import By
 
 
 class HomePageLocators(object):
-    pass
+    TITLE = (By.XPATH, '//h1[contains(., "Demosite")]')
+    COPY = (By.XPATH, '(//div[@class="contentText"])[1]')
+    GRID = (By.ID, 'bodyContent')
+    SECTION_HEADER = (By.XPATH, '//h2[contains(., "New Products")]')
+    sCATEGORIES = (By.XPATH, '(//div[contains(@class, "infoBoxContainer")])[2]')
+    sMANUFACTURES = (By.XPATH, '(//div[contains(@class, "infoBoxContainer")])[3]')
+    sSEARCH = (By.XPATH, '(//div[contains(@class, "infoBoxContainer")])[4]')
+    sPROMO = (By.XPATH, '(//div[contains(@class, "infoBoxContainer")])[5]')
+    sINFO = (By.XPATH, '(//div[contains(@class, "infoBoxContainer")])[6]')
+    sCART = (By.XPATH, '(//div[contains(@class, "infoBoxContainer")])[7]')
+    sORDERS = (By.XPATH, '(//div[contains(@class, "infoBoxContainer")])[8]')
+    sBESTSELLERS = (By.XPATH, '(//div[contains(@class, "infoBoxContainer")])[9]')
+    sSPECIALS = (By.XPATH, '(//div[contains(@class, "infoBoxContainer")])[10]')
+    sREVIEWS = (By.XPATH, '(//div[contains(@class, "infoBoxContainer")])[11]')
+    sCURRENCIES = (By.NAME, 'currencies')
 
 
 class GlobalHeaderLocators(object):
@@ -12,6 +26,12 @@ class GlobalHeaderLocators(object):
     CTA3 = (By.ID, 'tdb3')
     CTA4 = (By.ID, 'tdb4')
 
+
+class CategoriesLocators(object):
+    HWARE = (By.XPATH, '//a[contains(., "Hardware")]')
+    SWARE = (By.XPATH, '//a[contains(., "Software")]')
+    DVD = (By.XPATH, '//a[contains(., "DVD Movies")]')
+    GADGETS = (By.XPATH, '//a[contains(., "Gadgets")]')
 
 class HardwareCatalogLocators(object):
     # SUBCATEGORIES LIST
