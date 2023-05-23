@@ -9,8 +9,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27cb93db-557d-4b1e-bff7-988fca61b9a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi" beforeDir="false" afterPath="$PROJECT_DIR$/api_demo/webapi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/api_demo/webapi/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api_demo/webapi/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/build_database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/covid_tracker/cases_summary.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/covid_tracker/covid_tracker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/people.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/postman/People.postman_collection.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/postman/covid.postman_collection.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/postman/covid.postman_environment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/postman/people.postman_environment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/static/css/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/static/js/home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/swagger.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/templates/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/tests/test_mock_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/users/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/users/constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/users/mocks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo/webapi/users/services.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
