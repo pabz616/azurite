@@ -7,7 +7,7 @@ pytest-xdist
 xlrd
 ipdb
 
-requests>=2.31.0
+requests>=2.32.4
 Scrapy==2.11.2
 jsonschema==3.0.0
 assertpy
@@ -16,3 +16,4 @@ setuptools>=65.5.1
 twisted>=23.10.0rc1
 certifi>=2023.7.22
 idna>=3.7
+urllib3>=2.2.2 # not directly required, pinned by Snyk to avoid a vulnerability
