@@ -8,7 +8,7 @@ xlrd
 ipdb
 
 requests>=2.32.4
-Scrapy==2.11.2
+Scrapy==2.14.1
 jsonschema==3.0.0
 assertpy
 ipython>=8.10.0 
