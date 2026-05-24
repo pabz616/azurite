@@ -7,14 +7,14 @@ pytest-xdist
 xlrd
 ipdb
 
-requests>=2.33.1
-Scrapy==2.15.2
+requests>=2.34.2
+Scrapy==2.16.0
 jsonschema==4.26.0
-assertpy
+assertpy>==1.1.0
 ipython>=9.13.0 
-setuptools>=65.5.1 
-twisted==25.6.0
-certifi>=2026.4.22
-idna>=3.13
+setuptools>=82.0.1
+twisted==26.4.0
+certifi>=2026.5.20
+idna>=3.16
 urllib3>=2.7.0 # not directly required, pinned by Snyk to avoid a vulnerability
 h11>=0.16.0 # not directly required, pinned by Snyk to avoid a vulnerability

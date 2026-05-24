@@ -1,4 +1,15 @@
 {
   "snyk.advanced.organization": "da41c350-f466-4c5b-9a5b-1b7ef925daad",
-  "snyk.advanced.autoSelectOrganization": true
+  "snyk.advanced.autoSelectOrganization": true,
+  "cSpell.words": [
+    "assertpy",
+    "certifi",
+    "idna",
+    "ipython",
+    "jsonschema",
+    "Scrapy",
+    "setuptools",
+    "urllib"
+  ],
+  "python-envs.defaultEnvManager": "ms-python.python:venv"
 }
